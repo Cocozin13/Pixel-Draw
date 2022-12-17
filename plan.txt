@@ -1,0 +1,14 @@
+*Create a webpage with a 16x16 grid of square divs
+    -Create divs with JS
+    -Put them in a conteiner 
+    -Loop through all of them
+    -Put the size of the grid in a function
+
+*Make clicking or hovering change the divs color
+
+*Make button/scale that give the user a popup or direct information for a new numXnum grid
+    -Limit 100 divs
+    -The size of the conteiner should remain the same
+
+Extra:
+    Make the mouse give a RGB&Shadow color when a div is clicked or hovered
