@@ -1,5 +1,15 @@
+:root {
+    --body_bg_color: #EFEFEF;
+    --btn_bg_color: #EFEFEF;
+    --btn_bg_hover: #CACACA;
+    --btn_text_hover: white;
+    --btn_border_text_color: #2C2C2C;
+}
+
 html,body {
     height: 100%;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: bolder;
 }
 
 body {
@@ -7,11 +17,60 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--body_bg_color);
 }
 
 .conteiner {
     display: grid;
     width: 500px;
     height: 500px;
+    background-color: white;
     border: 2px solid grey;
+    position: relative;
+    right: 10rem;
+    top: 1.5rem;
+}
+
+h1 {
+    position: relative;
+    bottom: 17.5rem;
+    left: 35%;
+    font-size: 3rem;
+}
+
+.btnConteiner {
+    position: relative;
+    top: 2rem;
+    right: 12rem;
+}
+
+.btnConteiner button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    border: 2px solid var(--btn_border_text_color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: var(--btn_bg_color);
+    color: var(--btn_border_text_color)
+}
+
+button:hover {
+    background-color: var(--btn_bg_hover);
+    color: var(--btn_text_hover)
+}
+
+.btnConteiner button.active {
+    background-color: var(--btn_border_text_color);
+    color: var(--btn_text_hover)
+}
+
+.numPixels {
+    position: relative;
+    right: 3rem;
+    font-size: 1.5rem;
 }
